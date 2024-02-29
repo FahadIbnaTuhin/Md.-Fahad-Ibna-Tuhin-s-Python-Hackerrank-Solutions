@@ -1,15 +1,9 @@
-T = int(input())
-match = [".", "*", "\\", "+"]
+import re
 
-for i in range(T):
-    S = input()
+n = int(input())
 
-    count = 0
-    for i in range(len(S)):
-        if S[i] != match[i]:
-            count += 1
-
-    if count == 0:
-        print("True")
-    else:
-        print("False")
+for _ in range(n):
+    try:
+        print(bool(re.compile(input())))
+    except:
+        print('False')

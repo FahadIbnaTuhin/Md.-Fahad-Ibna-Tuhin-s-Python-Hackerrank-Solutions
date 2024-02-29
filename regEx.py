@@ -3,6 +3,7 @@ import re
 
 # txt = "The rain in Spain"
 # x = re.search("^The.*Spain$", txt)
+# print(x)
 
 txt = "The rain in Spain 12"
 
@@ -11,9 +12,9 @@ txt = "The rain in Spain 12"
 # print(re.findall("S...n", txt))
 
 # Zero or more occurrences
-# print(re.findall("T*e", txt))
+print(re.findall("T*e", txt))
 # One or more occurrences
-# print(re.findall("T+e", txt))
+print(re.findall("T+e", txt))
 
 # Zero or one
 # print(re.findall("S?n", txt))
@@ -22,5 +23,5 @@ txt = "The rain in Spain 12"
 # print(re.findall("r.{2}n", txt))
 
 # Either or
-print(re.findall("rain|drain", txt))
+# print(re.findall("rain|drain", txt))
 
