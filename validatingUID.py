@@ -1,10 +1,5 @@
 import re
+pattern = r"^(?!.*(.).*\1)(?=.*[A-Z].*[A-Z])(?=.*\d.*\d.*\d)[A-Za-z0-9]{10}$"
 
 for _ in range(int(input())):
-    uid = input()
-    if re.match(r'^[A-Z]{2,}[0-9]{3,}$', uid) and len(uid) == 10 and len(set(uid)) == len(uid):
-        print('Valid')
-    else:
-        print('Invalid')
-
-# Replaced re.findall with re.match to ensure that the entire string matches the pattern.
+    print("Valid") if re.match(pattern, input()) else print("Invalid")
