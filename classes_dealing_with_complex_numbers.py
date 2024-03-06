@@ -20,13 +20,16 @@ class Complex(object):
 
     def __truediv__(self, no):
         x = no.real ** 2 + no.imaginary ** 2
-        y = self * Complex(no.real, -1 * no.imaginary)
+        y = self * Complex(no.real, -no.imaginary)
         real = y.real / x
         imaginary = y.imaginary / x
         return Complex(real, imaginary)
 
     def mod(self):
-        ...
+        # It uses the formula |a+bi| = sqrt(a^2 + b^2).
+        # It returns a new Complex object with the modulus as its real part and 0 as its imaginary part.
+        real = math.sqrt(self.real ** 2 + self.imaginary ** 2)
+        return Complex(real, 0)
 
     def __str__(self):
         if self.imaginary == 0:
