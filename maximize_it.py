@@ -1,10 +1,15 @@
+from itertools import product
+
 k, m = map(int, input().split())
+arr = []
 
-sum = 0
 for _ in range(k):
-    row = list(map(int, input().split()))
-    sum += max(row) ** 2
+    _, *elements = map(int, input().split())
+    arr.append(elements)
 
-print(sum % m)
+# print(arr)
+combinations = list(product(*arr))
+# print(combinations)
 
-
+result = max(sum(i ** 2 for i in combination) % m for combination in combinations)
+print(result)

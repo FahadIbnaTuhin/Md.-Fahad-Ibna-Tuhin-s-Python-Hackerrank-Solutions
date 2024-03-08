@@ -5,7 +5,7 @@ import re
 # x = re.search("^The.*Spain$", txt)
 # print(x)
 
-txt = "The rain in Spain 12"
+# txt = "The rain in Spain 12"
 
 # print(re.findall("[a-m]", txt))
 # print(re.findall("\\d", txt))
@@ -42,7 +42,7 @@ txt = "The rain in Spain 12"
 # txt = "The rain in Spain"
 # x = re.search("\\s", txt)
 # print("The first white-space character is located in position:", x.start())
-
+#
 # x = re.search("Portugal", txt)
 # print(x)
 
