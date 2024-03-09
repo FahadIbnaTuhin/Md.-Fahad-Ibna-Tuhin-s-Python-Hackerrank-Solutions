@@ -3,7 +3,7 @@ import operator
 
 def person_lister(f):
     def inner(people):
-        return [f(el) for el in sorted(people, key=lambda x: x[2])]
+        return [f(el) for el in sorted(people, key=lambda x: int(x[2]))]
     return inner
 
 
