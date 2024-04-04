@@ -14,3 +14,5 @@ def binarySort(arr, target):
 
 result = binarySort([1, 2, 3, 4, 5, 6, 7], 5)
 print(result)
+
+# https://www.youtube.com/watch?v=6ysjqCUv3K4&list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H&index=10
